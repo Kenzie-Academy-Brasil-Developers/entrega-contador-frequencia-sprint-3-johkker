@@ -1,0 +1,15 @@
+body {
+    width: 400px;
+    margin: auto;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+ol {
+    list-style: none;
+    font-size: 0.5em;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-size: 0.5em;
+}
