@@ -23,19 +23,20 @@ function Counter() {
         }
     }
 
-        const orderedList = document.createElement("ol");
-        orderedList.style.listStyle = "none";
+        const orderedLetters = document.createElement("ol");
+        const orderedWords = document.createElement("ol");
         const letters = document.getElementById("lettersDiv");
         const words = document.getElementById("wordsDiv")
-        letters.appendChild(orderedList);
-        words.appendChild(orderedList)
+        letters.appendChild(orderedLetters);
+        words.appendChild(orderedWords);
 
     for (let letter in letterCounts) {
 
         const textContent = `${letter}: ${letterCounts[letter]} `;
         const listItems = document.createElement("li")
+        listItems.style.width = `${letterCounts[letter]}px`
         listItems.innerText = textContent;
-        orderedList.appendChild(listItems);
+        orderedLetters.appendChild(listItems);
     }
 
 
@@ -59,8 +60,9 @@ function Counter() {
     for (let word in wordCounts) {
         const textContent = `${word}: ${wordCounts[word]}`;
         const listItems = document.createElement("li")
+        listItems.style.width = `${wordCounts[word]*4}px`
         listItems.innerText = textContent;
-        orderedList.appendChild(listItems);
+        orderedWords.appendChild(listItems);
     }
 
 }

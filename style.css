@@ -1,15 +1,56 @@
+textarea {
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+#countButton {
+    width: 60%;
+    margin:auto;
+}
 body {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: auto;
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
 }
+
+
 ol {
     list-style: none;
     font-size: 0.5em;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0px;
+    
 }
-ul {
-    list-style: none;
-}
+
 li {
-    font-size: 0.5em;
+    text-align: justify;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: aqua;
+    border: 2px solid aquamarine;
+    border-radius: 0px 6px 6px 0px;
+}
+
+
+@media screen and (min-width: 600px) {
+    textarea {
+        height: 28vh;
+    }
+    body {
+      width: 500px;
+      max-width: fit-content;
+  }     
+  ol {
+      height: 120px;
+  }
+    
 }
