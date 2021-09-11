@@ -34,7 +34,7 @@ function Counter() {
 
         const textContent = `${letter}: ${letterCounts[letter]} `;
         const listItems = document.createElement("li")
-        listItems.style.width = `${letterCounts[letter]}px`
+        listItems.style.width = `${letterCounts[letter]*4}px`
         listItems.innerText = textContent;
         orderedLetters.appendChild(listItems);
     }
@@ -60,7 +60,7 @@ function Counter() {
     for (let word in wordCounts) {
         const textContent = `${word}: ${wordCounts[word]}`;
         const listItems = document.createElement("li")
-        listItems.style.width = `${wordCounts[word]*4}px`
+        listItems.style.width = `${wordCounts[word]*18}px`
         listItems.innerText = textContent;
         orderedWords.appendChild(listItems);
     }
